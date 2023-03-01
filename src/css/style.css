@@ -1,7 +1,51 @@
-body {
-    background: #000;
+body{
+    background-color: aqua;
 }
 
-.img {
-    width: 50px;
+.table {
+    width: 400px;
+    margin: auto;
+    border: 3px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+.goblin {
+    max-width: 100px;
+}
+
+.info {
+    text-align: center;
+}
+
+.title-info {
+    margin: 5px 0 10px 0;
+}
+
+.score-info {
+    width: 90px;
+    height: 50px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid red;
+    font-size: 50px;
+}
+
+.score-win {
+    color: green;
+}
+
+.score-lose {
+    color: red;
 }

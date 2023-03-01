@@ -20,6 +20,8 @@
           "import/extensions": [
             "error",
             "ignorePackages"
-            ]
+            ],
+        "no-param-reassign": 0,
+        "no-underscore-dangle": 0
     }
 }
