@@ -13,7 +13,9 @@ export default class GameLogic {
   init() {
     this.imgMove();
     this.interval = setInterval(() => {
-      this.clearImg();
+      if (this._elem.querySelector('.goblin')) {
+        this.clearImg();
+      }
       this.imgMove();
       if (this.scoreLogic.winCount >= 5) {
         clearInterval(this.interval);
@@ -45,6 +47,7 @@ export default class GameLogic {
     if (this.scoreLogic.stopGame()) {
       if (e.target.className === 'goblin') {
         this.scoreLogic.winMove();
+        this.clearImg();
       } else if (e.target.className === 'square') {
         this.scoreLogic.loseMove();
       }
